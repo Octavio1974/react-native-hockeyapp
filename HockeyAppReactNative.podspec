@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   #This includes feedback which is not needed
   #s.dependency 'HockeySDK/AllFeaturesLib', '~> 5.0.0'
   s.dependency 'HockeySDK', '~> 5.0.0'
-  #Need this or else pod want install
+  #Need this or else pod install won't work (Transient dependency error)
   s.static_framework = true
 
   s.source_files = 'ios/RNHockeyApp*.{h,m}'
