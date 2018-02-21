@@ -17,7 +17,11 @@ Pod::Spec.new do |s|
   s.preserve_paths = '*.js'
 
   s.dependency 'React'
-  s.dependency 'HockeySDK/AllFeaturesLib', '~> 5.0.0'
+  #This includes feedback which is not needed
+  #s.dependency 'HockeySDK/AllFeaturesLib', '~> 5.0.0'
+  s.dependency 'HockeySDK', '~> 5.0.0'
+  #Need this or else pod want install
+  s.static_framework = true
 
   s.source_files = 'ios/RNHockeyApp*.{h,m}'
   s.public_header_files = 'ios/RNHockeyApp.h'

@@ -94,14 +94,14 @@ RCT_EXPORT_METHOD(addMetadata:(NSData*) metadata)
     }
 }
 
-RCT_EXPORT_METHOD(feedback)
-{
-    if (initialized == YES) {
-        [[BITHockeyManager sharedHockeyManager].feedbackManager showFeedbackListView];
-    } else {
-        NSLog(@"Not initialized! \n");
-    }
-}
+// RCT_EXPORT_METHOD(feedback)
+// {
+//     if (initialized == YES) {
+//         [[BITHockeyManager sharedHockeyManager].feedbackManager showFeedbackListView];
+//     } else {
+//         NSLog(@"Not initialized! \n");
+//     }
+// }
 
 RCT_EXPORT_METHOD(checkForUpdate)
 {
